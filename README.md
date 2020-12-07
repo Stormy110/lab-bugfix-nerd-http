@@ -11,7 +11,9 @@ Slytherin
 
 # Bugs
 
-- [ ] The `dev` script no longer works
+- [X] The `dev` script no longer works
+_   **** Fixed the script key in package.json from "dve" to "dev" ****
+_   **** also nedeed to run npm install nerds for the require('nerds') to work ****
 - [ ] App crashes on browser refresh with `Error [ERR_STREAM_WRITE_AFTER_END]: write after end`
 - [ ] After moving the `http.createServer()` callback to another file, couldn't get server to run
 

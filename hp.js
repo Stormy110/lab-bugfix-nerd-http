@@ -1,4 +1,7 @@
 const nerds = require('nerds');
+const http = require('http')
+
+
 const app = (req, res) => {
     const {
         first,
@@ -6,15 +9,16 @@ const app = (req, res) => {
         house,
         wand
     } = nerds.resolve('Harry Potter').asArray()[0];
-    
+    res.statusCode = 200;
     res.end(`
         <h1>${first} ${last}</h1>
+        <h3>${house}</h3>
         <ul>
             <li>${wand}</li>
         </ul>
     `);
     
-    res.statusCode = 200;
-    res.write('<h2>${house}</h2>');
+   
 }
 module.exports = app;
+module.exports = server;
